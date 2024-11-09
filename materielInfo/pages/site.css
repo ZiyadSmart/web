@@ -1,0 +1,144 @@
+* {
+    --border: 0.5rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Titillium Web';
+    background: linear-gradient(135deg, #2302fd, #000, #02ff91);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2 {
+    color: white;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightPink;
+    border: 1px solid white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: var(--border);
+    height: 30px;
+    width: 200px;
+}
+
+nav > a:hover {
+    background-color: pink;
+}
+
+nav > a:active {
+    border: 1px solid black;
+    color: white;
+}
+
+header,
+footer,
+p {
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 5%;
+    opacity: 0.9;
+    border-radius: var(--border);
+}
+
+div {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: var(--border);
+    top: 50%;
+    left: 50%;
+}
+
+#burgerImg {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+form {
+    color: white;
+}
+
+form > label {
+    display: inline-block;
+    width: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+
+    #burgerImg {
+        display: block;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    #burgerImg:hover + nav {
+        display: block;
+        margin-top: 0;
+    }
+
+    nav:hover {
+        display: block;
+        float: left;
+    }
+}
+
+main > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap 
+}
+
+main > div > form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button_description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+    main > div {
+        flex-direction: column;
+    }
+}
+
+footer {
+    min-height: 987px'
+}
+
+
+
+
